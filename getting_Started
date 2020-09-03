@@ -1,0 +1,5 @@
+Currently this file just serves me to start everyday. I will make it more general in future.
+
+i) open Anaconda prompt. Start -> Anaconda prompt
+ii) got to D:\kaggle_stuff\nlp-getting-started (cd D:\kaggle_stuff\nlp-getting-started)
+iii) jupyter notebook kaggle_nlp_getting_started.ipynb
