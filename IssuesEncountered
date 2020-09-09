@@ -1,0 +1,4 @@
+1. clf = LogisticRegression(C=1, penalty="l1")
+throws "ValueError: Solver lbfgs supports only 'l2' or 'none' penalties, got l1 penalty"
+
+Fix: clf = LogisticRegression(C=1, penalty="l1", solver='liblinear')
