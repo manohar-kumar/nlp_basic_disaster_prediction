@@ -2,3 +2,7 @@
 throws "ValueError: Solver lbfgs supports only 'l2' or 'none' penalties, got l1 penalty"
 
 Fix: clf = LogisticRegression(C=1, penalty="l1", solver='liblinear')
+
+
+2. Installing package xgboost
+Fix: conda install -c anaconda py-xgboost (Link : https://stackoverflow.com/questions/35139108/how-to-install-xgboost-in-anaconda-python-windows-platform)
