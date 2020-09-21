@@ -6,3 +6,9 @@ Fix: clf = LogisticRegression(C=1, penalty="l1", solver='liblinear')
 
 2. Installing package xgboost
 Fix: conda install -c anaconda py-xgboost (Link : https://stackoverflow.com/questions/35139108/how-to-install-xgboost-in-anaconda-python-windows-platform)
+
+3. When reading glove vectors file, throws error "'charmap' codec can't decode byte X in position Y: character maps to <undefined>"
+use f = open('filename', , encoding='utf8')
+Source - https://stackoverflow.com/questions/9233027/unicodedecodeerror-charmap-codec-cant-decode-byte-x-in-position-y-character
+
+
