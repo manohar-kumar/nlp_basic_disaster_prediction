@@ -2,3 +2,9 @@
 
 * Progress bar with tqdm
 Use like "for line in tqdm(f):" for reading file
+
+* Getting stopwords
+import nltk
+nltk.download('stopwords')
+stop_words = set(stopwords.words('english')) 
+
