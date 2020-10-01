@@ -8,3 +8,15 @@ import nltk
 nltk.download('stopwords')
 stop_words = set(stopwords.words('english')) 
 
+* How to make downloading kaggle data on VMs work
+On jupyter,
+!pip install kaggle
+Used !pip uninstall kaggle to check where is kaggle
+It returned /data/home/manokuma/.local/bin/kaggle
+Got API keys from kaggle account
+Then set those keys in the environment
+  import os
+  os.environ['KAGGLE_USERNAME'] = 'hackmano'
+  os.environ['KAGGLE_KEY'] = '6b6a3dc8c750eb24af3b2886f9821e60'
+Used following command to download the data
+ !/data/home/manokuma/.local/bin/kaggle competitions download -c nlp-getting-started
