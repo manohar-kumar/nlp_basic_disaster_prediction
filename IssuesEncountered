@@ -11,4 +11,6 @@ Fix: conda install -c anaconda py-xgboost (Link : https://stackoverflow.com/ques
 use f = open('filename', , encoding='utf8')
 Source - https://stackoverflow.com/questions/9233027/unicodedecodeerror-charmap-codec-cant-decode-byte-x-in-position-y-character
 
-
+4. In jupyter notebook, azure dlvm, chose kernel as Python 3.5, wrote "import pandas" it failed with error "module 'pandas' has no attribute 'core'"
+Did "!pip install --upgrade pandas==0.24.2 pandas-gbq" and then import pandas started working.
+Source - https://github.com/googleapis/google-cloud-python/issues/9006
