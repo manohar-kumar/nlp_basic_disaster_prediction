@@ -17,6 +17,13 @@ Got API keys from kaggle account
 Then set those keys in the environment
   import os
   os.environ['KAGGLE_USERNAME'] = 'hackmano'
-  os.environ['KAGGLE_KEY'] = '6b6a3dc8c750eb24af3b2886f9821e60'
+  os.environ['KAGGLE_KEY'] = 'kaggle_key_from_onenote'
 Used following command to download the data
  !/data/home/manokuma/.local/bin/kaggle competitions download -c nlp-getting-started
+ 
+ * How to preprocess
+ https://www.kaggle.com/christofhenkel/how-to-preprocessing-when-using-embeddings
+ check if punctuations are present in vocab, otherwise filter them out.. keep checking coverage of data in vocab
+
+* LSTM with glove embedding
+https://heartbeat.fritz.ai/text-classification-using-long-short-term-memory-glove-embeddings-6894abb730e1
